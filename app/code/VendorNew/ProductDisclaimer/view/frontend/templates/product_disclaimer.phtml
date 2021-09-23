@@ -1,0 +1,21 @@
+<div class="custom-block">
+    <?php echo "<h2>Product Disclaimer</h2>";
+      $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $disclaimer_message = $objectManager
+                ->get('Magento\Framework\App\Config\ScopeConfigInterface')
+                ->getValue('module/general/productdisclaimer');
+                echo $disclaimer_message;
+
+  /* $writer = new \Zend\Log\Writer\Stream(BP . '/var/log/mylog.log');
+   $logger = new \Zend\Log\Logger();
+   $logger->addWriter($writer);
+   $logger->info($conf);*/
+?>
+   </div>
+
+<style type="text/css">
+    .custom-block {
+        clear: both;
+        margin-bottom: 30px;
+    }
+</style>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Backend/etc/menu.xsd">
+    <menu>
+        <add id="vendornew_productlisting::core" title="Product Create" module="VendorNew_ProductListing" sortOrder="90" resource="VendorNew_ProductListing::sample"/>
+        <add id="vendornew_productlisting::test" title="All Products" module="VendorNew_ProductListing" sortOrder="10" parent="VendorNew_ProductListing::core" action="vendornew_productlisting/items/" resource="VendorNew_ProductListing::items"/>
+    </menu>
+</config>

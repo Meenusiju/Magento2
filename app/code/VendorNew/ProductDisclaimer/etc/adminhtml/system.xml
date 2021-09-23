@@ -1,0 +1,24 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="vendor" translate="label" class="vendor" sortOrder="100">
+            <label>vendor</label>
+        </tab>
+        <section id="module" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Module</label>
+            <tab>vendor</tab>
+            <resource>Product_Disclaimer::config_productdisclaimer</resource>
+            <group id="general" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+                <field id="productdisclaimer" translate="label comment" type="textarea" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Product Disclaimer</label>
+                    
+                </field>
+            </group>
+        </section>    
+    </system>
+</config>
